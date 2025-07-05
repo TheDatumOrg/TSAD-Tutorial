@@ -16,6 +16,9 @@
     .module-list li { margin-bottom: 8px; }
     .btn { display: inline-block; padding: 10px 15px; background: #007acc; color: #fff; text-decoration: none; border-radius: 4px; }
     .btn:hover { background: #005fa3; }
+    .btn + .btn {
+    margin-left: 1rem;
+    }
     .authors {
         display: flex;
         flex-wrap: wrap;
@@ -51,22 +54,22 @@
 
     <div class="authors">
         <div class="author">
-          <span class="name">John Paparrizos</span>
+          <a class="name" href="https://www.paparrizos.org/" target="_blank">John Paparrizos</a>
           <span class="affiliation">OSU • AUTh</span>
         </div>
         <div class="author">
-          <span class="name">Paul Boniol</span>
+          <a class="name" href="https://boniolp.github.io/" target="_blank">Paul Boniol</a>
           <span class="affiliation">Inria • DI ENS • PSL • CNRS</span>
         </div>
         <div class="author">
-          <span class="name">Qinghua Liu</span>
+          <a class="name" href="https://qhliu26.github.io" target="_blank">Qinghua Liu</a>
           <span class="affiliation">OSU</span>
         </div>
         <div class="author">
-          <span class="name">Themis Palpanas</span>
+          <a class="name" href="https://helios2.mi.parisdescartes.fr/~themisp/" target="_blank">Themis Palpanas</a>
           <span class="affiliation">Université Paris Cité • IUF</span>
         </div>
-    </div>
+      </div>
     
     <nav>
       <ul>
@@ -85,31 +88,33 @@
         Recent advances in data collection technology, accompanied by the ever-rising volume and velocity of streaming data, underscore the vital need for time series analytics. In this regard, time-series anomaly detection has been an important activity, entailing various applications in fields such as cyber security, financial markets, law enforcement, and health care. While traditional literature on anomaly detection is centered on statistical measures, the increasing number of machine learning algorithms in recent years call for a structured, general characterization of the research methods for time-series anomaly detection.
         In this paper, we present a process-centric taxonomy for time-series anomaly detection methods, systematically categorizing traditional statistical approaches and contemporary machine learning techniques. Beyond this taxonomy, we conduct a meta-analysis of the existing literature to identify broad research trends. Given the absence of a one-size-fits-all anomaly detector, we also introduce emerging trends for time-series anomaly detection. Furthermore, we review commonly used evaluation measures and benchmarks, followed by an analysis of benchmark results to provide insights into the impact of different design choices on model performance. Through these contributions, we aim to provide a holistic perspective on time-series anomaly detection and highlight promising avenues for future investigation.
       </p>
+      <p>
+        <a class="btn" href="files/Tutorial_Advances in Time-Series Anomaly Detection.pdf" target="_blank">View Slides</a>
+      </p>
       <!-- <p>
         <a class="btn" href="TSAD_KDD25_Tutorial.pdf" target="_blank">Download Tutorial PDF</a>
       </p> -->
     </section>
 
     <section id="modules">
-      <h2>Tutorial Modules</h2>
-      <ol class="module-list">
-        <li><strong>Introduction & Anomaly Types</strong><br>Point, contextual, and collective anomalies in time series.</li>
-        <li><strong>Process-Centric Taxonomy</strong><br>Distance-, density-, and prediction-based methods.</li>
-        <li><strong>Evolution of Methods</strong><br>From statistical tests to deep learning and transformers.</li>
-        <li><strong>Emerging Trends</strong><br>Foundation models, LLM prompting, meta-learning for model selection.</li>
-        <li><strong>Evaluation Measures</strong><br>Point- vs. range-based metrics, AUC-PR/ROC, VUS.</li>
-        <li><strong>Benchmarks & Best Practices</strong><br>TSB-AD and other benchmark suites; pitfalls and recommendations.</li>
-        <li><strong>Discussion & Future Directions</strong><br>Open challenges, streaming and multivariate anomalies.</li>
-      </ol>
-    </section>
+        <h2>Tutorial Modules</h2>
+        <ol class="module-list">
+          <li><strong>Part 1:</strong> Introduction, Motivation and Foundations (30min)</li>
+          <li><strong>Part 2:</strong> Taxonomy of Anomaly Detection Methods (45min)</li>
+          <li><strong>Part 3:</strong> Evaluation Measures (30min)</li>
+          <li><strong>Part 4:</strong> Anomaly Detection Benchmarks (25min)</li>
+          <li><strong>Part 5:</strong> Automated Solutions for Anomaly Detection (25min)</li>
+          <li><strong>Part 6:</strong> Conclusion and Open Problems (25min)</li>
+        </ol>
+      </section>
 
     <section id="speakers">
       <h2>Speakers</h2>
       <ul>
-        <li><strong>John Paparrizos</strong> — The Ohio State University</li>
-        <li><strong>Paul Boniol</strong> — Inria, PSL</li>
-        <li><strong>Qinghua Liu</strong> — The Ohio State University</li>
-        <li><strong>Themis Palpanas</strong> — Université Paris Cité</li>
+        <li><strong>John Paparrizos</strong> - The Ohio State University, Aristotle University of Thessaloniki</li>
+        <li><strong>Paul Boniol</strong> - Inria, PSL</li>
+        <li><strong>Qinghua Liu</strong> - The Ohio State University</li>
+        <li><strong>Themis Palpanas</strong> - Université Paris Cité</li>
       </ul>
     </section>
 
